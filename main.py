@@ -6,8 +6,8 @@ from generator import make_picture
 from googletrans import Translator
 from asgiref.sync import sync_to_async
 
-
-bot = Bot("8042462482:AAHZmmj2RD6mTUicdFyMJwoIxf2W2K2DBJY")
+BOT_TOKEN="8042462482:AAHZmmj2RD6mTUicdFyMJwoIxf2W2K2DBJY"
+bot = Bot(BOT_TOKEN)
 dp = Dispatcher()
 
 async def translate_text(text):
