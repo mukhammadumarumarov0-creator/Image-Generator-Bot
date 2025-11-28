@@ -1,13 +1,12 @@
 from aiogram import Bot, Dispatcher, F
-from aiogram.types import Message,InlineKeyboardMarkup,InlineKeyboardButton,CallbackQuery,FSInputFile
+from aiogram.types import Message,FSInputFile
 from aiogram.filters import CommandStart
 import asyncio
 from generator import make_picture
 from googletrans import Translator
 from asgiref.sync import sync_to_async
 
-BOT_TOKEN="8042462482:AAHZmmj2RD6mTUicdFyMJwoIxf2W2K2DBJY"
-bot = Bot(BOT_TOKEN)
+bot = Bot("8042462482:AAHZmmj2RD6mTUicdFyMJwoIxf2W2K2DBJY")
 dp = Dispatcher()
 
 async def translate_text(text):
