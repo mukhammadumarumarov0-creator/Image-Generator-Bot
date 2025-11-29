@@ -1,9 +1,10 @@
 from huggingface_hub import InferenceClient
+from decouple import config
 
 def make_picture(prompt,name):
  client = InferenceClient(
     provider="nebius",
-    api_key="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",
+    api_key=config("API_KEY"),
  )
 
  image = client.text_to_image(
